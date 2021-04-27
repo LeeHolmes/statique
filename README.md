@@ -91,3 +91,29 @@ $container = $storageAccount | New-AzStorageContainer -Name comments -Permission
 ## sv=2019-07-07&sr=c&sig=pI0YWToYGa9nfSIgRQA%3D&spr=https&se=2099-01-01T00%3A00%3A00Z&sp=rcl
 $container | New-AzStorageContainerSASToken -Permission "rcl" -Protocol "httpsonly" -ExpiryTime "1/1/2099"
 ```
+
+## Importing Comments
+
+Statique uses your page's URL to filter comments.
+
+For this page:
+
+`https://www.leeholmes.com/statique-simple-self-hosted-comments-for-static-websites/`
+
+The base comment URL in your Azure Storage container will be (URL has all non-word characters replaced by "`_`":
+
+`_statique_simple_self_hosted_comments_for_static_websites`
+
+Then, Statique adds a GUID and comment author, separated by two underscores (comment author has all non-word characters replaced by "`_`"):
+
+`_statique_simple_self_hosted_comments_for_static_websites___3c1265e8-f9f8-4ccb-2280-39442834f026__Lee_Holmes__.json`
+
+The content of this blob itself is a simple JSON object of Username, Date, Comment, and CommentId:
+
+``` json
+{"Username":"Lee Holmes","Date":"Tue, 27 Apr 2021 14:18:39 GMT","Comment":"Wow, this was easy!","CommentId":"cf468c27-b3ba-a39b-27cf-f36297bfa3b9"}
+```
+
+If you want to import comments from another platform, you can see a PowerShell script that does this for WordPress. This will generate a directory full of .json files based on a WordPress blog export, which you can then use Azure Storage Explorer to upload:
+
+[WordPress Importer](https://github.com/LeeHolmes/statique/blob/main/misc/Import-WordpressComment.ps1)
