@@ -1,4 +1,4 @@
-# statique - Simple Self-Hosted Comments for Static Websites
+# Statique - Simple Self-Hosted Comments for Static Websites
 
 ![image](https://user-images.githubusercontent.com/11475352/116257432-e6f0c000-a728-11eb-8948-d0c09e2f3b41.png)
 
