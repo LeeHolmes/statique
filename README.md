@@ -100,7 +100,7 @@ For this page:
 
 `https://www.leeholmes.com/statique-simple-self-hosted-comments-for-static-websites/`
 
-The base comment URL in your Azure Storage container will be (URL has all non-word characters replaced by "`_`":
+The base comment URL in your Azure Storage container will be (URL has all non-word characters replaced by "`_`"):
 
 `_statique_simple_self_hosted_comments_for_static_websites`
 
