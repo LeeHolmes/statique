@@ -1,0 +1,7 @@
+.statiqueComments { margin:0 auto; display: flex; flex-direction: column; }
+.statiqueCommentList { flex: 1; overflow-y: auto; padding-bottom:10px; }
+.statiqueSingleComment { padding-top: 5px; padding-bottom: 5px; border-top: 1px solid black }
+.statiqueCommentLabel { font-weight: bold; padding-top: 5px; padding-right: 5px; display: inline }
+.statiqueNewCommentHeader { font-weight: bold; margin-top: 10px; margin-bottom: 5px; background-color: #EEEEEE; }
+.statiqueComment { padding-top: 5px; padding-bottom: 10px; }
+.statiqueNewCommentContainer { border-top: 3px dashed black; width: 50%; display: none; }
