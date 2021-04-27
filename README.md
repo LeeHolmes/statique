@@ -61,7 +61,7 @@ The `statiqueAuth` parameter is an auth string you generate for your Azure Stora
 
 ### statiqueBaseUri
 
-The `statiqueAuth` parameter is the URL for the 'comments' container in your Azure Storage account - for example, `https://statiquecomments.blob.core.windows.net/comments`. See below for how to configure your Storage account.
+The `statiqueBaseUri` parameter is the URL for the 'comments' container in your Azure Storage account - for example, `https://statiquecomments.blob.core.windows.net/comments`. See below for how to configure your Storage account.
 
 ## Create and Configure your Azure Storage Account
 
