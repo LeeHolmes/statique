@@ -102,7 +102,7 @@ For this page:
 
 The base comment URL in your Azure Storage container will be (URL has all non-word characters replaced by "`_`"):
 
-`_statique_simple_self_hosted_comments_for_static_websites`
+`_statique_simple_self_hosted_comments_for_static_websites_`
 
 Then, Statique adds a GUID and comment author, separated by two underscores (comment author has all non-word characters replaced by "`_`"):
 
