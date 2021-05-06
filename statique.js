@@ -90,7 +90,7 @@ function statiqueGetBlobContent()
 
         if(comments.length == commentsLoadPending)
         {
-            comments.sort( function(a, b) { return  a.Date > b.Date ? 1: -1 })
+            comments.sort( function(a, b) { return (new Date(a.Date)) > (new Date(b.Date)) ? 1: -1 })
 
             var commentList = document.getElementById("statiqueCommentList")
             commentList.innerHTML = ""
